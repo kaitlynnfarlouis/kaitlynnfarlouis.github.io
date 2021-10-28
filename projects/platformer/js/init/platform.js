@@ -27,8 +27,15 @@
         let createPlatform = platform.create;
 
         ////////////////////////////////////////////////////////////////////////
-        // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
-        
+        // ALL YOUR CODE GOES BELOW HERE /////////////////////////////////////// 
+        /*
+createPlatform(x, y, scaleX, scaleY);
+ 
+x: The x coordinate for the platform.
+y: The y coordinate for the platform.
+scaleX: OPTIONAL The scale factor on the x-axis, this value will stretch the platform in width.
+scaleY: OPTIONAL The scale factor on the y-axis, this value will stretch the platform in height.
+*/
         /*
          * ground : here, we create a floor. Given the width of of the platform 
          * asset, giving it a scaleX and scaleY of 2 will stretch it across the 

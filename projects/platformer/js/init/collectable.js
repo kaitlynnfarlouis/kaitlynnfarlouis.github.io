@@ -30,15 +30,6 @@
      *      gravity: OPTIONAL The gravitational pull on the collectable.
      *      bounce: OPTIONAL A factor effecting how much the collectable will bounce off platforms, etc.
      */ 
-    /*
-createCollectable(type, x, y, gravity, bounce);
-
-type: The type of the collectable. 
-x: The x coordinate for the collectable.
-y: The y coordinate for the collectable.
-gravity: OPTIONAL The gravitational pull on the collectable.
-bounce: OPTIONAL A factor effecting how much the collectable will bounce off platforms, etc.
-
     function init(game) {
         let createCollectable = collectable.create;
 
@@ -57,10 +48,12 @@ scaleX: OPTIONAL The scale factor on the x-axis, this value will stretch the pla
 scaleY: OPTIONAL The scale factor on the y-axis, this value will stretch the platform in height.
 */
 createCollectable(type.steve, 200, 170, 6, 0.7);
+createCollectable(type.db, 700, 350, 6, 0.7)
+createCollectable(type.grace, 200, 550, 6, 0.7)
 
 
 
-        
+
         
         
         

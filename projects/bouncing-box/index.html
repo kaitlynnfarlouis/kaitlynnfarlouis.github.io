@@ -48,7 +48,7 @@
 
 			// moves the Box to a new position on the screen along the X-Axis
 			function moveBoxTo(boardWidth) {
-				box.css("left", 200);
+				box.css("left", 100);
 			}
 			
 
@@ -70,8 +70,12 @@
 			it should move the Box to a new location. If the box drifts off the screen
 			turn it around! 
 			*/
-			function update() {
+			function update(){
+				moveBoxTo(right>100);
+			} 
+			
 			}
+			
 				
 
 			};

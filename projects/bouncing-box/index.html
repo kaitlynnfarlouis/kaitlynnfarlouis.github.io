@@ -80,13 +80,16 @@
 				moveBoxTo(positionX);
 		 		positionX = positionX + speed;
 			if(positionX > boardWidth){
+				console.log('change direction of box');
 				speed = -speed;
 			}
 			else if(positionX < 0){
 				speed = -speed;
 			}
 		};
-			
+			if(positionX > 0){
+				speed = speed;
+			}
 				
 
 		
@@ -98,10 +101,9 @@
 			*/
 			function handleBoxClick() {
 				positionX = 0;
+				speed = speed + 3;
 				changeBoxText(points);
 				points = points + 1;
-				speed += 3;
-
 			}
 
 		})();

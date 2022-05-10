@@ -21,13 +21,13 @@ var init = function (window) {
         
         // TODO 1 : Declare and initialize our variables
 
-
+var circles;
+var circles = [];
         // TODO 2 : Create a function that draws a circle 
-        
-
+        function drawCircle(){}
+function physikz.addRandomVelocity(circle, canvas, 10, 10);(){ }
         // TODO 3 / 8 : Call the drawCircle() function 
-
-
+drawCircle(100);
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
         ////////////////////////////////////////////////////////////
@@ -40,14 +40,29 @@ var init = function (window) {
         function update() {
             // TODO 4 : Update the circle's position //
 
-            
+            physikz.updatePosition(circles[0]);
+            physikz.updatePosition(circles[1]);
+            physikz.updatePosition(circles[2]);
+            physikz.updatePosition(circles[3]);
+            physikz.updatePosition(circles[4]);
+        }
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
            
-
+            game.checkCirclePosition(circles[0]);
+            game.checkCirclePosition(circles[1]);
+            game.checkCirclePosition(circles[2]);
+            game.checkCirclePosition(circles[3]);
+            game.checkCirclePosition(circles[4]);
             // TODO 9 : Iterate over the array
            
             
+        function physikz.updatePosition(eachCircle){
+
         }
+        function game.checkCirclePosition(eachCircle){
+            
+        }
+
     
         /* 
         This Function should check the position of a circle that is passed to the 
@@ -60,9 +75,14 @@ var init = function (window) {
             if ( circle.x > canvas.width ) {
                 circle.x = 0;
             }
+            if ( circle.x + canvas.radius ){
+
+            }
             
             // TODO 7 : YOUR CODE STARTS HERE //////////////////////
-            
+            for (var i = 0; i < circles.length; i++) {
+                var eachValue = circles[i];
+            }
 
 
             // YOUR TODO 7 CODE ENDS HERE //////////////////////////
